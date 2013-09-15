@@ -4,12 +4,13 @@ Ways to Shoot Yourself in the Foot When Creating an Eclipse Update Site
 2.  DON'T update the versions of all involved plugins and the org.strategoxt.imp.feature project
 3.  DON'T specify the "unpack" attribute in feature.xml; let Eclipse surprise you instead (the little checkbox won't tell you what happens)
 4.  DON'T delete the content.jar and artifacts.jar after cleaning up the update dir
-5.  DON'T open feature.xml in Eclipse and set all versions to those in the projects using the "Versions" button
-6.  DON'T open site.xml in Eclipse and choose "Add Feature" and add the new feature (be sure you DON'T put it in the category so it won't show up)
-7.  Or DON'T pick "Synchronize all" if you made an update site already
-8.  DON'T save before building the feature.xml
-9.  DON'T choose "Build All"; if you pick "Build" it will act like its building but won't build all plugins
-10. Especially DON'T invoke your favorite deity through prayer and/or song at this point
-11. If you're using a testing directory for updates, be sure you DON'T adapt site.xml with the new url
-12. Finally, to test it, DON'T use a clean Eclipse installation and DON'T use a clean workspace (Eclipse 3.4+ may do workspace-based caching!)
-13. DON'T assume 1.0.10 comes after 1.0.9
+5.  DON'T have a version number that has four segments. E.g: DON'T make it like this V.X.Y.Z
+6.  DON'T open feature.xml in Eclipse and set all versions to those in the projects using the "Versions" button
+7.  DON'T open site.xml in Eclipse and choose "Add Feature" and add the new feature (be sure you DON'T put it in the category so it won't show up)
+8.  Or DON'T pick "Synchronize all" if you made an update site already
+9.  DON'T save before building the feature.xml
+10. DON'T choose "Build All"; if you pick "Build" it will act like its building but won't build all plugins
+11. Especially DON'T invoke your favorite deity through prayer and/or song at this point
+12. If you're using a testing directory for updates, be sure you DON'T adapt site.xml with the new url
+13. Finally, to test it, DON'T use a clean Eclipse installation and DON'T use a clean workspace (Eclipse 3.4+ may do workspace-based caching!)
+14. DON'T assume 1.0.10 comes after 1.0.9

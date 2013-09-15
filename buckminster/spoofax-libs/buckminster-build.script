@@ -1,0 +1,11 @@
+build
+
+perform org.spoofax.jsglr#bundle.jars
+perform org.spoofax.interpreter.library.xml#bundle.jars
+perform org.spoofax.interpreter.library.language#bundle.jars
+perform org.spoofax.interpreter.library.jsglr#bundle.jars
+perform org.spoofax.interpreter.library.java#bundle.jars
+perform org.spoofax.interpreter.library.interpreter#bundle.jars
+perform org.spoofax.interpreter.library.index#bundle.jars
+perform org.spoofax.interpreter.core#bundle.jars
+perform org.metaborg.runtime.task#bundle.jars

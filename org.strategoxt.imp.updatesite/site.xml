@@ -3,7 +3,7 @@
    <description name="Spoofax/IMP" url="http://spoofax.org/update/stable/">
       Spoofax update site
    </description>
-   <feature url="features/org.strategoxt.imp_1.0.9.0.jar" id="org.strategoxt.imp" version="1.0.9.0">
+   <feature url="features/org.strategoxt.imp_1.2.0.0.jar" id="org.strategoxt.imp" version="1.2.0.0">
       <category name="Spoofax/IMP"/>
    </feature>
    <category-def name="Spoofax/IMP" label="Spoofax/IMP">
@@ -12,4 +12,3 @@
       </description>
    </category-def>
 </site>
-

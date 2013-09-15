@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rmap
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.eclipse.org/buckminster/RMap-1.0"
+	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0">
+
+	<searchPath name="eclipse">
+		<provider
+			readerType="p2"
+			componentTypes="osgi.bundle,eclipse.feature"
+			mutable="false"
+			source="false">
+			<uri format="http://download.eclipse.org/eclipse/updates/4.2" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="imp">
+		<provider
+			readerType="p2"
+			componentTypes="osgi.bundle,eclipse.feature"
+			mutable="false"
+			source="false">
+			<uri format="http://download.eclipse.org/technology/imp/updates" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="mb-rep">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/mb-rep,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/mb-rep.git" />
+			<property
+				key="git.remote.name"
+				value="mb-rep" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="mb-exec">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/mb-exec,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/mb-exec.git" />
+			<property
+				key="git.remote.name"
+				value="mb-exec" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="mb-exec-deps">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/mb-exec-deps,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/mb-exec-deps.git" />
+			<property
+				key="git.remote.name"
+				value="mb-exec-deps" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="jsglr">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/jsglr,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/jsglr.git" />
+			<property
+				key="git.remote.name"
+				value="jsglr" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="runtime-libraries">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/runtime-libraries,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/runtime-libraries.git" />
+			<property
+				key="git.remote.name"
+				value="runtime-libraries" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="spoofax">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/spoofax,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/spoofax.git" />
+			<property
+				key="git.remote.name"
+				value="spoofax" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="spoofax-debug">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/spoofax-debug,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/spoofax-debug.git" />
+			<property
+				key="git.remote.name"
+				value="spoofax-debug" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="spoofax-deploy">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/spoofax-deploy,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/spoofax-deploy.git" />
+			<property
+				key="git.remote.name"
+				value="spoofax-deploy" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="spx">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/spx,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/spx.git" />
+			<property
+				key="git.remote.name"
+				value="spx" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="sdf">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/sdf,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/sdf.git" />
+			<property
+				key="git.remote.name"
+				value="sdf" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="rtg">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/rtg,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/rtg.git" />
+			<property
+				key="git.remote.name"
+				value="rtg" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="box">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/box,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/box.git" />
+			<property
+				key="git.remote.name"
+				value="box" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="esv">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/esv,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/esv.git" />
+			<property
+				key="git.remote.name"
+				value="esv" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="stratego">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/stratego,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/stratego.git" />
+			<property
+				key="git.remote.name"
+				value="stratego" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="aster">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/aster,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/aster.git" />
+			<property
+				key="git.remote.name"
+				value="aster" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="nabl">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/nabl,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/nabl.git" />
+			<property
+				key="git.remote.name"
+				value="nabl" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="spt">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/spt,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/spt.git" />
+			<property
+				key="git.remote.name"
+				value="spt" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="strj-source">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/strj,strategoxt-java-backend">
+				<bc:propertyRef key="workspace.root" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/strategoxt.git" />
+			<property
+				key="git.remote.name"
+				value="strj" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="strj-bundle">
+		<provider
+			readerType="git"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/strj-bundle,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/strj-bundle.git" />
+			<property
+				key="git.remote.name"
+				value="strj-bundle" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="spoofax-sunshine">
+		<provider
+			readerType="git"
+			componentTypes="buckminster"
+			source="true">
+			<uri format="{0}/spoofax-sunshine,{1}">
+				<bc:propertyRef key="workspace.root" />
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+			<property
+				key="git.remote.uri"
+				value="https://github.com/metaborg/spoofax-sunshine.git" />
+			<property
+				key="git.remote.name"
+				value="spoofax-sunshine" />
+			<property
+				key="git.auto.fetch"
+				value="true" />
+		</provider>
+	</searchPath>
+
+	<searchPath name="spoofax-libs">
+		<provider
+			readerType="local"
+			componentTypes="eclipse.feature,osgi.bundle"
+			source="true">
+			<uri format="{0}/spoofax-libs">
+				<bc:propertyRef key="workspace.root" />
+			</uri>
+		</provider>
+	</searchPath>
+
+
+
+
+	<locator
+		searchPathRef="mb-rep"
+		pattern="^org\.spoofax\.aterm$" />
+	<locator
+		searchPathRef="mb-rep"
+		pattern="^org\.spoofax\.interpreter\.adapter\.aterm$" />
+	<locator
+		searchPathRef="mb-rep"
+		pattern="^org\.spoofax\.interpreter\.library\.index$" />
+	<locator
+		searchPathRef="mb-rep"
+		pattern="^org\.spoofax\.terms$" />
+	<locator
+		searchPathRef="mb-rep"
+		pattern="^org\.spoofax\.terms\.convert$" />
+	<locator
+		searchPathRef="mb-rep"
+		pattern="^org\.strategoxt\.imp\.editors\.aterm$" />
+
+
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^^org\.spoofax\.compiler$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^^org\.spoofax\.interpreter$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.adapter\.asm$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.adapter\.ecj$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.core$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.library\.eclipse$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.library\.interpreter$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.library\.java$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.library\.jline$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.library\.xml$" />
+	<locator
+		searchPathRef="mb-exec"
+		pattern="^org\.spoofax\.interpreter\.ui$" />
+
+
+	<locator
+		searchPathRef="mb-exec-deps"
+		pattern="^org\.spoofax\.interpreter\.externaldeps$" />
+
+
+	<locator
+		searchPathRef="jsglr"
+		pattern="^org\.spoofax\.interpreter\.library\.jsglr$" />
+	<locator
+		searchPathRef="jsglr"
+		pattern="^org\.spoofax\.jsglr$" />
+
+
+	<locator
+		searchPathRef="runtime-libraries"
+		pattern="^org\.metaborg\.runtime\.task$" />
+
+
+	<locator
+		searchPathRef="spoofax"
+		pattern="^org\.strategoxt\.imp\.generator$" />
+	<locator
+		searchPathRef="spoofax"
+		pattern="^org\.strategoxt\.imp\.metatooling$" />
+	<locator
+		searchPathRef="spoofax"
+		pattern="^org\.strategoxt\.imp\.nativebundle$" />
+	<locator
+		searchPathRef="spoofax"
+		pattern="^org\.strategoxt\.imp\.runtime$" />
+	<locator
+		searchPathRef="spoofax"
+		pattern="^org\.strategoxt\.imp\.runtime\.sidebyside\.latest$" />
+	<locator
+		searchPathRef="spoofax"
+		pattern="^org\.strategoxt\.imp\.runtime\.sidebyside\.legacy$" />
+	<locator
+		searchPathRef="spoofax"
+		pattern="^org\.strategoxt\.imp\.runtime\.sidebyside\.main$" />
+
+
+	<locator
+		searchPathRef="spoofax-debug"
+		pattern="^org\.strategoxt\.imp\.debug\.core$" />
+	<locator
+		searchPathRef="spoofax-debug"
+		pattern="^org\.strategoxt\.imp\.debug\.stratego\.core$" />
+	<locator
+		searchPathRef="spoofax-debug"
+		pattern="^org\.strategoxt\.imp\.debug\.stratego\.runtime$" />
+	<locator
+		searchPathRef="spoofax-debug"
+		pattern="^org\.strategoxt\.imp\.debug\.stratego\.test$" />
+	<locator
+		searchPathRef="spoofax-debug"
+		pattern="^org\.strategoxt\.imp\.debug\.stratego\.transformer$" />
+	<locator
+		searchPathRef="spoofax-debug"
+		pattern="^org\.strategoxt\.imp\.debug\.ui$" />
+
+
+	<locator
+		searchPathRef="spoofax-deploy"
+		pattern="^org\.strategoxt\.imp\.feature$" />
+	<locator
+		searchPathRef="spoofax-deploy"
+		pattern="^org\.strategoxt\.imp\.updatesite$" />
+
+
+	<locator
+		searchPathRef="spx"
+		pattern="^org\.spoofax\.interpreter\.library\.language$" />
+	<locator
+		searchPathRef="spx"
+		pattern="^org\.strategoxt\.imp\.editors\.spoofax\.configuration$" />
+	<locator
+		searchPathRef="spx"
+		pattern="^org\.strategoxt\.imp\.editors\.spoofax$" />
+	<locator
+		searchPathRef="spx"
+		pattern="^org\.strategoxt\.imp\.spoofax\.generator$" />
+
+
+	<locator
+		searchPathRef="sdf"
+		pattern="^org\.strategoxt\.imp\.editors\.sdf$" />
+	<locator
+		searchPathRef="sdf"
+		pattern="^org\.strategoxt\.imp\.editors\.template$" />
+
+
+	<locator
+		searchPathRef="rtg"
+		pattern="^org\.strategoxt\.imp\.editors\.rtg$" />
+
+
+	<locator
+		searchPathRef="box"
+		pattern="^org\.strategoxt\.imp\.editors\.pp$" />
+
+
+	<locator
+		searchPathRef="esv"
+		pattern="^org\.strategoxt\.imp\.editors\.editorservice$" />
+
+
+	<locator
+		searchPathRef="stratego"
+		pattern="^org\.strategoxt\.imp\.editors\.stratego$" />
+
+
+	<locator
+		searchPathRef="aster"
+		pattern="^org\.strategoxt\.imp\.editors\.aster$" />
+
+
+	<locator
+		searchPathRef="nabl"
+		pattern="^org\.metaborg\.meta\.lang\.nabl$" />
+
+
+	<locator
+		searchPathRef="spt"
+		pattern="^org\.strategoxt\.imp\.testing$" />
+
+
+	<locator
+		searchPathRef="strj-bundle"
+		pattern="^org\.strategoxt\.strj\.bundle$" />
+
+
+	<locator
+		searchPathRef="spoofax-sunshine"
+		pattern="^org\.spoofax\.sunshine$" />
+	<locator
+		searchPathRef="spoofax-sunshine"
+		pattern="^org\.spoofax\.sunshine\.gitdrive$" />
+
+
+	<locator
+		searchPathRef="spoofax-libs"
+		pattern="^spoofax-libs$" />
+
+
+	<locator
+		searchPathRef="imp"
+		pattern="^org\.eclipse\.imp\.*" />
+	<locator
+		searchPathRef="imp"
+		pattern="^lpg\.*" />
+
+
+	<locator searchPathRef="eclipse" />
+</rmap>
