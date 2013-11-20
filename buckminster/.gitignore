@@ -3,6 +3,6 @@ headless
 spoofax/workspace
 spoofax/out
 spoofax-libs/workspace/**
-~spoofax-libs/workspace/spoofax-libs
+!spoofax-libs/workspace/spoofax-libs
 spoofax-libs/out
 spoofax-libs/spoofax-libs.jar

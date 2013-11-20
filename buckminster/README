@@ -1,0 +1,17 @@
+# Usage
+
+Download a copy of the Eclipse Director, which is used to create a headless Eclipse installation:
+
+    sh director-make.sh
+
+Build a headless Eclipse installation:
+
+    sh headless-make.sh
+
+Build the Spoofax libraries jar file:
+
+    cd spoofax-libs
+    sh clone.sh
+    sh build.sh
+
+The Spoofax libraries jar file is created as `spoofax-libs.jar`.

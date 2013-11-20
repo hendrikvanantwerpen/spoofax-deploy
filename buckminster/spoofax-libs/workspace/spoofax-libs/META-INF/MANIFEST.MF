@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: spoofax-libs
+Bundle-SymbolicName: spoofax-libs
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.spoofax.terms,
+ org.spoofax.jsglr,
+ org.spoofax.interpreter.library.xml,
+ org.spoofax.interpreter.library.language,
+ org.spoofax.interpreter.library.jsglr,
+ org.spoofax.interpreter.library.java,
+ org.spoofax.interpreter.library.interpreter,
+ org.spoofax.interpreter.library.index,
+ org.spoofax.interpreter.core,
+ org.metaborg.runtime.task
