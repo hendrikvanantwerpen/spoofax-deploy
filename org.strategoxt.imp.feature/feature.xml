@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.strategoxt.imp"
-      label="Spoofax/IMP"
+      label="Spoofax Core"
       version="1.2.0.0"
       plugin="org.strategoxt.imp.runtime">
 
@@ -17,22 +17,15 @@ http://strategoxt.org/Spoofax/ChangeLog
       Copyright (c) Lennart C. L. Kats 2010
    </copyright>
 
-   <license url="http://www.spoofax.org/">
+   <license url="http://metaborg.org/">
       Spoofax License Information
-
-This software is distributed in the hope that it will be useful,
-but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-full license texts for more details.
-Most Spoofax/IMP code is licensed under the GNU Lesser General
-Public License
-(LGPL). Runtime components related to the IMP library are
-licensed under the Eclipse Public License (EPL).
+      
+      This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the full license texts for more details.
+Most Spoofax/IMP code is licensed under the GNU Lesser General Public License (LGPL). Runtime components related to the IMP, EMF and GMF libraries are licensed under the Eclipse Public License (EPL).
    </license>
 
    <url>
-      <update label="Spoofax/IMP updates" url="http://spoofax.org/update/stable/"/>
+      <update label="Spoofax updates" url="http://spoofax.org/update/stable/"/>
    </url>
 
    <requires>
