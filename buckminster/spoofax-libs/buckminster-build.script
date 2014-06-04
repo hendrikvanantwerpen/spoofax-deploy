@@ -1,4 +1,4 @@
-build
+build -c
 
 perform org.spoofax.jsglr#bundle.jars
 perform org.spoofax.interpreter.library.xml#bundle.jars

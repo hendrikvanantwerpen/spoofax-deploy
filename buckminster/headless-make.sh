@@ -2,7 +2,7 @@
 
 rm -rf headless
 ./director/director \
-	-r http://download.eclipse.org/tools/buckminster/headless-4.2/,http://download.spoofax.org/update/nightly/,http://download.eclipse.org/eclipse/updates/4.2 \
+	-r http://download.eclipse.org/tools/buckminster/headless-4.3/,http://download.eclipse.org/eclipse/updates/4.3 \
 	-d headless \
 	-p Buckminster \
 	-i org.eclipse.buckminster.cmdline.product \
